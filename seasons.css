@@ -190,3 +190,11 @@ audio{
     margin: auto;
 }
 
+#iframe1, #iframe2{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border: 10px ridge rgb(118, 164, 118);
+    border-radius: 20px; 
+}
