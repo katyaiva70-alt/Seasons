@@ -1,0 +1,124 @@
+body{
+    background-image: linear-gradient(rgba(250, 188, 72, 0.3), rgba(250, 188, 72, 0.7)), url(img/backgrounds/orig.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    background-position: center; 
+    margin: 0;
+    /* padding: 1px; */
+    box-sizing: border-box;
+}
+
+main{
+    width: fit-content;
+    height: 100vh;
+    padding: 1px 100px;
+    margin: auto;
+    box-sizing: border-box;
+    /* background-color: rgba(255, 228, 196, 0.286); */
+}
+
+@font-face {
+    font-family: unifix;
+    src: url(fonts/UnifixSP/UnifixSPDemo.otf);
+}
+
+h1{
+font-family: unifix;
+color:white;
+font-size: 5vw;
+text-shadow: 0 0 15px black;
+margin-bottom: 10px;
+text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+a{
+    color: white;
+    font-size: 2.5vw;
+    font-family: unifix;
+    text-decoration: none;
+    text-shadow: 0 0 15px black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#clock{
+    width: 200px;
+    height: 200px;
+    border: 15px groove #539C3D;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-bottom: 10px groove #F5E431;
+    border-top: 10px groove lightskyblue;
+    border-right: 10px groove orange;
+    position: relative;
+    box-shadow: 0 0 15px black;
+}
+
+#seconds{
+    width: 45%;
+    height: 8px;
+    background-color: #539C3D;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 50%;
+    animation: go 60s linear infinite;
+    transform-origin: left;
+    box-shadow: 0 0 12px black;
+}
+
+#minutes{
+    width: 35%;
+    height: 8px;
+    background-color: orange;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 50%;
+    animation: go 3600s linear infinite;
+    transform-origin: left;
+    box-shadow: 0 0 12px black;
+}
+
+#hours{
+    width: 25%;
+    height: 8px;
+    background-color: lightskyblue;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 50%;
+    animation: go 216000s linear infinite;
+    transform-origin: left;
+    box-shadow: 0 0 12px black;
+}
+
+@keyframes go {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#bolt{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #F5E431;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    box-shadow: 0 0 15px black;
+}
