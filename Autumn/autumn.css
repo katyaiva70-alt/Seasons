@@ -1,0 +1,395 @@
+
+body{
+    background-color: rgb(177, 204, 177);
+}
+
+main{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+
+#poem{
+    width: fit-content;
+    margin-left: auto;
+    font-family: alklife;
+    letter-spacing: 0.1em;
+    color: rgb(253, 237, 13);
+text-shadow: 3px 3px 7px rgb(68, 46, 12);
+font-weight: bold;
+    /* border: 2px solid black;    */
+}
+
+h1{
+width: fit-content;
+padding: 2%;
+margin: auto;
+font-size: 7em;
+color: rgb(240, 149, 12);
+text-align: center;
+font-family: alklife;
+text-shadow: 5px 5px 15px rgb(68, 46, 12);
+/* background-color: rgb(216, 236, 216); */
+border: 15px groove rgb(125, 153, 125);
+border-radius: 0 70px;
+}
+
+    @font-face {
+        font-family: alklife;
+        src: url(fonts/ALKLife/alk-life-webfont.ttf);
+    }
+
+h2{ 
+    font-size: 4em;
+    color: rgb(240, 149, 12);
+    text-align: center;
+    font-family: alklife;
+    text-shadow: 3px 3px 10px rgb(68, 46, 12);
+}  
+
+h3{
+    font-size: 2em;
+    color: rgb(253, 237, 13);
+    text-align: left;
+    font-family: alklife;
+    text-shadow: 3px 3px 10px rgb(68, 46, 12);
+}  
+
+
+th, td{
+    border: 2px solid rgb(125, 153, 125);
+    text-align: center;
+    width: 110px;
+    height: 30px;
+    font-family: alklife;
+    font-weight: bold;
+}
+
+.weekend{
+    color: red;
+}
+
+#leaf1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    animation: snowing1 80s infinite linear;
+    z-index: 100;
+    scale: 1.5;
+}
+
+#leaf2{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    animation: snowing2 60s infinite linear;
+    z-index: 100;
+    scale: 1.3;
+}
+
+#leaf3{
+    position: absolute;
+    top: 6%;
+    left: 70%;
+    animation: snowing3 50s infinite linear;
+    z-index: 100;
+    scale: 1.5;
+}
+
+#leaf4{
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    animation: snowing4 70s infinite linear;
+    z-index: 100;
+    scale: 1.5;
+}
+
+#leaf5{
+    position: absolute;
+    top: 7%;
+    left: 80%;
+    animation: snowing5 50s infinite linear;
+    z-index: 100;
+    scale: 1.5;
+}
+
+@keyframes snowing1{
+    from{
+        top: 5%;
+        left: 10%;
+        transform: rotate(0);
+    }
+
+    10%{
+        top: 500px;
+        left: 25%;
+    }
+     30%{
+        top: 1500px;
+        left: 15%;
+    }
+     50%{
+        top: 3500px;
+        left: 25%;
+    }
+     70%{
+        top: 5000px;
+        left: 10%;
+    }
+    to{
+        top: 6000px;
+        left: 5%;
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes snowing2{
+    from{
+        top: 10%;
+        left: 40%;
+        transform: rotate(0);
+    }
+
+    10%{
+        top: 400px;
+        left: 30%;
+    }
+     30%{
+        top: 1000px;
+        left: 45%;
+    }
+     50%{
+        top: 2500px;
+        left: 35%;
+    }
+     70%{
+        top: 4000px;
+        left: 50%;
+    }
+    90%{
+        top: 5000px;
+        left: 25%;
+    }
+    to{
+        top: 6000px;
+        left: 40%;
+        transform: rotate(720deg);
+    }
+}
+
+
+@keyframes snowing3{
+    from{
+        top: 6%;
+        left: 50%;
+        transform: rotate(0);
+    }
+     50%{
+        top: 2000px;
+        left: 70%;
+    }
+
+    to{
+        top: 5000px;
+        left: 50%;
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes snowing4{
+    from{
+        top: 1%;
+        left: 90%;
+        transform: rotate(0);
+    }
+
+    10%{
+        top: 500px;
+        left: 95%;
+    }
+     30%{
+        top: 1500px;
+        left: 75%;
+    }
+     50%{
+        top: 3500px;
+        left: 90%;
+    }
+     70%{
+        top: 5000px;
+        left: 70%;
+    }
+    to{
+        top: 6000px;
+        left: 85%;
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes snowing5{
+    from{
+        top: 7%;
+        left: 80%;
+        transform: rotate(0);
+    }
+
+     50%{
+        top: 2500px;
+        left: 65%;
+    }
+
+    to{
+        top: 5000px;
+        left: 90%;
+        transform: rotate(720deg);
+    }
+}
+
+#september, #october, #november{
+    width: 40%;
+}
+
+section{
+    display: flex;
+    border: 10px groove rgb(125, 153, 125);
+}
+
+#photo1{
+    position: absolute;
+    z-index: 10;
+    border: 10px groove rgb(125, 153, 125);
+}
+
+#photo1:hover{
+    z-index: 11;
+    transform: scale(1.2);
+}
+
+
+#photo2{
+    position: absolute;
+    top: 50px;
+    left: 13%;
+    z-index: 9;
+    border: 10px groove rgb(125, 153, 125);
+}
+
+#photo2:hover{
+    z-index: 11;
+    transform: scale(1.2);
+}
+
+
+#photo3{
+    position: absolute;
+    top: 100px;
+    left: 26%;
+    z-index: 8;
+    border: 10px groove rgb(125, 153, 125);
+}
+#photo3:hover{
+    z-index: 11;
+    transform: scale(1.2);
+}
+
+#photo4{
+    position: absolute;
+    top: 150px;
+    left: 39%;
+    z-index: 7;
+    border: 10px groove rgb(125, 153, 125);
+}
+#photo4:hover{
+    z-index: 11;
+    transform: scale(1.2);
+}
+
+#photo5{
+    position: absolute;
+    top: 200px;
+    left: 52%;
+    z-index: 6;
+    border: 10px groove rgb(125, 153, 125);
+}
+#photo5:hover{
+    z-index: 11;
+    transform: scale(1.2);
+}
+
+#gallary{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    /* z-index: -100; */
+    /* border: 2px solid black; */
+    /* background-color: antiquewhite; */
+}
+
+#gallary img{
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#film{
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+}
+
+#film video{
+    border: 10px groove rgb(125, 153, 125);
+    width: 60%;
+    margin-top: 50px;
+    /* position: absolute; */
+}
+
+#music{
+ border: 10px groove rgb(125, 153, 125);
+ width: auto;
+ display: flex;
+ justify-content: space-around;
+ gap: 5px;
+ align-items: center;
+}
+
+/* #music *{
+    border: 1px solid black;
+} */
+
+#music p{
+font-family: alklife;
+font-size: large;
+font-weight: bold;
+color: rgb(253, 237, 13);
+text-shadow: 3px 3px 7px rgb(68, 46, 12);
+/* text-decoration: underline rgb(253, 237, 13); */
+margin-right: 0;
+width: 15%;
+}
+
+audio{
+    border: 3px solid rgb(253, 237, 13); 
+    border-radius: 50px; 
+    /* padding: 2px; */
+    box-shadow: 3px 3px 10px rgb(68, 46, 12);
+    /* margin-top: 1300px;
+    position: absolute; */
+}
+
+#frames{
+    position: relative;
+    display: flex;
+}
+
+#iframe1, #iframe2{
+    width: 45%;
+    height: 300px;
+    margin: 20px;
+}
+
+iframe{
+    width: 100%;
+    height: auto;
+}
